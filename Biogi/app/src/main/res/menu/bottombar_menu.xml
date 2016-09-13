@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/healthCheck"
+            android:icon="@drawable/ic_healthcheck"
+            android:title="健檢報告" />
+        <item
+            android:id="@+id/itemReport"
+            android:icon="@drawable/ic_itemreport"
+            android:title="分項報告" />
+
+        <item
+            android:id="@+id/followSupport"
+            android:icon="@drawable/ic_follow"
+            android:title="後續追蹤" />
+        <item
+            android:id="@+id/goods"
+            android:icon="@drawable/ic_suggest"
+            android:title="營養建議" />
+
+
+
+
+
+</menu>

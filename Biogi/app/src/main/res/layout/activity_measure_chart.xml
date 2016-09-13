@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/chart_toolbar"
+            android:background="@color/login_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_one"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="從"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/chart_toolbar"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="至"
+            android:id="@+id/textView17"
+            android:layout_above="@+id/secondDate"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="產生趨勢圖"
+            android:id="@+id/btnCreate"
+            android:textSize="20sp"
+            android:background="#BDBDBD"
+            android:textColor="#FFFFFF"
+            android:layout_above="@+id/chart_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/firstDate"
+            android:layout_below="@+id/textView16"
+            android:focusable="false"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/secondDate"
+            android:layout_above="@+id/btnCreate"
+            android:focusable="false"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

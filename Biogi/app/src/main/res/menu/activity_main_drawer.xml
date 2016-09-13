@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/healthCheck"
+            android:icon="@drawable/ic_healthcheck"
+            android:title="健檢報告" />
+        <item
+            android:id="@+id/measureClass"
+            android:icon="@drawable/ic_measure"
+            android:title="量測紀錄" />
+        <item
+            android:id="@+id/goods"
+            android:icon="@drawable/ic_goods"
+            android:title="保健商品" />
+        <item
+            android:id="@+id/q_and_a"
+            android:icon="@drawable/ic_talk_question"
+            android:title="線上Q&amp;A" />
+        <item
+            android:id="@+id/talkroom"
+            android:icon="@drawable/ic_talkroom"
+            android:title="聊天室" />
+        <item
+            android:id="@+id/memberSetIn"
+            android:icon="@drawable/set"
+            android:title="設定" />
+    </group>
+
+
+
+</menu>

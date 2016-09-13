@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.soil.biogi.measure.measureItemDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="量測時間"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="量測結果"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textView8"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="量測數值"
+                android:id="@+id/textView9"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="19dp"
+                android:layout_above="@+id/textView8"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/itemname"
+                android:text="123"
+                android:textSize="16sp"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_alignStart="@+id/itemvalue"
+                android:layout_alignEnd="@+id/itemvalue" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/itemvalue"
+                android:textSize="16sp"
+                android:text="123"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_alignStart="@+id/itemdate" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/itemdate"
+                android:textSize="16sp"
+                android:text="123"
+                android:layout_marginStart="28dp"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="unit"
+                android:id="@+id/itemunit"
+
+                android:layout_alignTop="@+id/itemvalue"
+                android:layout_alignEnd="@+id/itemvalue"
+                android:layout_marginEnd="35dp" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:text="查看趨勢圖"
+                android:id="@+id/chart"
+                android:gravity="left|center"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_chart1"
+                android:background="@color/btn_background_no"
+                android:layout_alignTop="@+id/textView8"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/itemname" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

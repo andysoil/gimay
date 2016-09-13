@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/measureitem"
+    tools:context=".homepage">
+
+    <RelativeLayout
+        android:layout_width="361dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:text="編輯個人檔案"
+            android:id="@+id/changedata"
+            android:background="#00000000"
+            android:gravity="left|center"
+            android:onClick="editData"
+            android:layout_gravity="right|top"
+            android:layout_below="@+id/textView19"
+            android:layout_alignStart="@+id/changebtn" />
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="我的帳號"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/changedata" />
+
+
+        <Button
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:text="更改密碼"
+            android:id="@+id/changebtn"
+            android:background="#00000000"
+            android:gravity="left|center"
+            android:onClick="changebtn"
+            android:layout_gravity="right"
+            android:layout_below="@+id/changedata"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:text="登出"
+            android:id="@+id/logout"
+            android:background="#00000000"
+            android:gravity="left|center"
+            android:onClick="logoutbtn"
+            android:layout_gravity="right"
+            android:layout_below="@+id/changebtn"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="隱私設定"
+            android:id="@+id/textView18"
+            android:layout_below="@+id/btnLogining"
+            android:layout_alignStart="@+id/btnLogining" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            android:background="#00000000"
+            android:gravity="left|center"
+            android:id="@+id/btnLogining"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignEnd="@+id/changedata" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="授權親屬"
+            android:id="@+id/button3"
+            android:background="#00000000"
+            android:layout_below="@+id/textView18"
+            android:layout_alignStart="@+id/textView18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="通知設定"
+            android:id="@+id/textView19"
+            android:layout_below="@+id/button3"
+            android:layout_alignStart="@+id/button3" />
+
+    </RelativeLayout>
+</FrameLayout>

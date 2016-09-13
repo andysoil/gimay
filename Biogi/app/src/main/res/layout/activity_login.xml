@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/loginLayout"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="會員登入"
+        android:id="@+id/textView14"
+        android:textColor="#795548"
+        android:textSize ="35sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="0.04" />
+
+    <include layout="@layout/content_login"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:layout_weight="0.53" />
+
+
+
+</LinearLayout>
